@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket</title>
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <main>
+    <header class="header">
+        <div>
+            <nav class="navbar">
+                <img class="logo" src="../img/logo-eco-market-100x100.png">
+                    <ul>
+                        <a href="../index.html" class="boton_inicio">Home</a>
+                        <a href="../views/ofertas.html" class="boton_inicio">Ofertas</a>
+                        <a href="../views/productos.html" class="boton_inicio">Productos</a>
+                        <a href="../views/Categorias.html" class="boton_inicio">Categorias</a>
+                        <a href="../views/contacto.html" class="boton_inicio">Contacto</a>
+                        <a href="../views/comentarios.html" class="boton_inicio">Comentario</a>
+                    </ul>
+                    <input class="boton_busqueda" type="search" placeholder="Buscador ">
+            </nav>
+        </div>
+    </header>
+    <section class="formulario entrada-izquierda">
+            <h2 class="centrar-for">Comentanos tus ideas</h2>
+            <div class="centrar-for">
+                <form action="#" method="post">
+                    <p>
+                        <label for="nombre">Nombre completo:</label><br>
+                        <input class="boton_for" type="text" id="nombre" name="nombre" placeholder="Ejemplo: Ana Pérez" required>
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input class="boton_for" type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono:</label><br>
+                        <input class="boton_for" type="tel" id="telefono" name="telefono" placeholder="3001234567">
+                    </p>
+
+                    <p>
+                        <label for="comentarios">Comentarios:</label><br>
+                        <textarea class="boton_for" id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Cuéntanos qué esperas que mejoremos..."></textarea>
+                    </p>
+
+                    <input type="hidden" name="origen" value="sesion-html-2">
+
+                    <p>
+                        <a href="../index.html" class="boton_inicio">Enviar</a>
+                        <a href="../views/comentarios.html" class="boton_inicio">Resetear</a>
+                    </p>
+                </form>
+            </div>
+    </section>
+    </header>
+    </main>
+   
+        <footer id="abajo-pagina" class="abajo-pagina" >
+            <div class="contenedor-footer">
+                <h3 class="centrar-texto">NUESTRAS REDES SOCIALES</h3>
+                <p class="centrar-texto">Conose mas de nosotros en nuestras redes sociales</p>
+            
+                <div class="redes-sociales">
+                    <a class="alinear_al_centro" href="https://www.facebook.com/ecomarketsaludable" target="_blank" rel="noopener">
+                        <img src="../img/logofb-removebg-preview.png" alt=""></a>
+                    <a class="alinear_al_centro" href="https://www.instagram.com/ecomarketsaludable/" target="_blank" rel="noopener">
+                        <img src="../img/il_fullxfull.5312137777_qj67-removebg-preview.png" alt=""></a>
+                    <a class="alinear_al_centro" href="https://www.tiktok.com/@ecomarket.official" target="_blank" rel="noopener">
+                        <img src="../img/logotiktok-removebg-preview.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

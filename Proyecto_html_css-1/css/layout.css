@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/descarga.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center;  
+    background-attachment: fixed;  
+    min-height: 100vh;
+    
+}
+
+main {
+    flex: 1; 
+}
