@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoMarket</title>
+    <title>Calculadora EcoMarket</title>
     <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/calculadora.css">
 </head>
 <body>
+
     <main>
-    <header class="header">
+        <header class="header">
         <div>
             <nav class="navbar">
                 <img class="logo" src="../img/logo-eco-market-100x100.png">
@@ -26,82 +27,60 @@
                     </ul>
                     <input class="boton_busqueda" type="search" placeholder="Buscador ">
             </nav>
+        </header>
         </div>
-    </header>
-    <section class="formulario entrada-izquierda">
-            <h2 class="centrar-for">Calculadora de Huella de Carbono</h2>
-            <div class="centrar-for">
+        <div class="calculadora-contenedor">
+            <h2>Calculadora de Huella de Carbono</h2>
+            <p>Ingresa tus datos mensuales para obtener un cálculo estimado de tus emisiones.</p>
 
-                <strong>🏠 Hogar y Energía</strong>
-    
-                <form action="#" method="post">
-                    
-                    <p>
-                        <label for="programa-interes">¿Qué fuente de energía usas en casa?:</label><br>
-                        <select id="programa-interes" name="programa_interes" required>
-                            <option value="">Electricidad</option>
-                            <option value="html-css">Gas natural</option>
-                            <option value="javascript">Propano</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="nombre">¿Cuál es tu consumo mensual promedio?</label><br>
-                        <input class="boton_for" type="text" id="nombre" name="nombre" placeholder="Ejemplo: Ana Pérez" required>
-                    </p>
-    
-                    <p>¿Utilizas electrodomésticos de bajo consumo (etiqueta A, A+, A++)?</p>
-                    <p>
-                        <input type="radio" id="si" name="electrodomésticos de bajo consumo" value="si">
-                        <label for="presencial">Si</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="si" name="modalidad" value="virtual">
-                        <label for="virtual">No</label>
-                    </p>
-                    <fieldset>
-                        <legend>Intereses del estudiante</legend>
-    
-                        <p>
-                            <input type="checkbox" id="frontend" name="intereses" value="frontend">
-                            <label for="frontend">Diseño de páginas web</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="formularios" name="intereses" value="formularios">
-                            <label for="formularios">Formularios y recolección de datos</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="proyectos" name="intereses" value="proyectos">
-                            <label for="proyectos">Crear proyectos reales</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="automatizacion" name="intereses" value="automatizacion">
-                            <label for="automatizacion">Automatización de tareas y procesos</label>
-                        </p>
-                    </fieldset> 
-                    <p>
-                        <button type="submit">Enviar registro</button>
-                        <button type="reset">Limpiar formulario</button>
-                    </p>
-                </form>
+            <div class="titulo-seccion">🏠 Hogar</div>
+            <div class="campo">
+                <label for="energia">Consumo de energía mensual (kWh):</label>
+                <input type="number" id="energia" placeholder="Ej. 150">
             </div>
-    </section>
-    </header>
+
+            <div class="titulo-seccion">🚗 Transporte</div>
+            <div class="campo">
+                <label for="medio">Medio de Transporte Principal:</label>
+                <select id="medio">
+                    <option>Automóvil Familiar</option>
+                    <option>Motocicleta</option>
+                    <option>Autobús / Metro</option>
+                    <option>Bicicleta / Caminar</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="km">Kilómetros recorridos al mes:</label>
+                <input type="number" id="km" placeholder="Ej. 300">
+            </div>
+
+            <input type="checkbox" id="activar-calculo">
+            <label for="activar-calculo" class="boton-calcular">Calcular Impacto Total</label>
+
+            <div class="seccion-resultado">
+                <h3>📊 Resultado Estimado</h3>
+                <p>Basado en tus datos, tu huella de carbono promedio es de:</p>
+                <p class="resultado-numero">
+                    215 kg de CO2 al mes
+                </p>
+            </div>
+        </div>
     </main>
-   
-        <footer id="abajo-pagina" class="abajo-pagina" >
-            <div class="contenedor-footer">
-                <h3 class="centrar-texto">NUESTRAS REDES SOCIALES</h3>
-                <p class="centrar-texto">Conose mas de nosotros en nuestras redes sociales</p>
-            
-                <div class="redes-sociales">
-                    <a class="alinear_al_centro" href="https://www.facebook.com/ecomarketsaludable" target="_blank" rel="noopener">
-                        <img src="../img/logofb-removebg-preview.png" alt=""></a>
-                    <a class="alinear_al_centro" href="https://www.instagram.com/ecomarketsaludable/" target="_blank" rel="noopener">
-                        <img src="../img/il_fullxfull.5312137777_qj67-removebg-preview.png" alt=""></a>
-                    <a class="alinear_al_centro" href="https://www.tiktok.com/@ecomarket.official" target="_blank" rel="noopener">
-                        <img src="../img/logotiktok-removebg-preview.png" alt=""></a>
-                </div>
-            </div>
-        </footer>
+    <footer id="abajo-pagina" class="abajo-pagina" >
+    <div class="contenedor-footer">
+        <h3 class="centrar-texto">NUESTRAS REDES SOCIALES</h3>
+        <p class="centrar-texto">Conose mas de nosotros en nuestras redes sociales</p>
+    
+        <div class="redes-sociales">
+            <a class="alinear_al_centro" href="https://www.facebook.com/ecomarketsaludable" target="_blank" rel="noopener">
+                <img src="../img/logofb-removebg-preview.png" alt=""></a>
+            <a class="alinear_al_centro" href="https://www.instagram.com/ecomarketsaludable/" target="_blank" rel="noopener">
+                <img src="../img/il_fullxfull.5312137777_qj67-removebg-preview.png" alt=""></a>
+            <a class="alinear_al_centro" href="https://www.tiktok.com/@ecomarket.official" target="_blank" rel="noopener">
+                <img src="../img/logotiktok-removebg-preview.png" alt=""></a>
+        </div>
+    </div>
+    </footer>
+
 </body>
 </html>
